@@ -46,7 +46,6 @@ img {
 /* -----------------------------  Header  ----------------------------------- */
 
 .header {
-  padding: 24px 0 23px;
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
@@ -68,6 +67,8 @@ img {
   text-transform: uppercase;
   color: var(--iris-color);
   margin-right: 76px;
+  padding: 24px 0 23px;
+  display: block;
 }
 .header-logo span {
   color: var(--main-text-color);
@@ -87,6 +88,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  padding: 24px 0 23px;
+  display: block;
 }
 .header-item-page:hover,
 .header-item-page:focus {
@@ -109,17 +112,21 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0 23px;
+  display: block;
 }
 .header-address-item-mail:hover,
 .header-address-item-mail:focus {
   color: var(--hover-focus-color);
 }
 .header-address-item-tel {
+  display: block;
   color: var(--address-items-description-color);
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0 23px;
 }
 .header-address-item-tel:hover,
 .header-address-item-tel:focus {
@@ -129,7 +136,7 @@ img {
 /* ------------------- Hero ----------------------------*/
 .hero {
   background: var(--main-text-color);
-  padding: 188px 0 131px;
+  padding: 188px 0;
 }
 .hero-title {
   width: 496px;
@@ -153,6 +160,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
   padding: 16px 32px;
+  border: none;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -166,7 +174,7 @@ img {
 
 /* ------------------- Features ----------------------------*/
 .features {
-  padding: 177px 0 120px;
+  padding: 120px 0 120px;
 }
 .features-list {
   display: flex;
@@ -212,6 +220,7 @@ img {
 }
 .doing-item {
   margin-right: 24px;
+  width: 360px;
 }
 .doing-item:last-child {
   margin-right: 0;
@@ -242,6 +251,7 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  width: 264px;
 }
 .team-item:last-child {
   margin-right: 0;
@@ -306,17 +316,14 @@ img {
 }
 .portfolio-gallery-list {
   display: flex;
-  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
-.portfolio-gallery-list:last-child {
-  margin-bottom: 0;
-}
+
 .portfolio-gallery-item {
-  margin-right: 24px;
+  width: 360px;
 }
-.portfolio-gallery-item:nth-child(3n) {
-  margin-right: 0;
-}
+
 .porfolio-gallery-item-content {
   padding: 32px 16px;
   border-left: 1px solid #e7e9fc;
