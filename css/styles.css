@@ -254,7 +254,7 @@ img {
 .team-item {
   background: var(--main-background-color);
   margin-right: 24px;
-  background: #ffffff;
+  background: var(--main-background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -299,6 +299,10 @@ img {
   height: 100%;
   background-color: var(--iris-color);
   border-radius: 50%;
+}
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--hover-focus-color);
 }
 .team-social-icon {
   width: 16px;
@@ -375,6 +379,53 @@ img {
   color: var(--address-items-description-color);
 }
 
+/* -----------------------------  Customers Section  ----------------------------------- */
+
+.customers {
+  padding: 130px 0 120px;
+}
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--main-text-color);
+}
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.customers-item {
+  margin-top: 72px;
+  height: 88px;
+  width: 168px;
+}
+.customers-icon {
+  height: 56px;
+  width: 104px;
+}
+.customers-icon {
+  fill: #8e8f99;
+}
+.customers-link:is(:hover, :focus) .customers-icon {
+  fill: var(--hover-focus-color);
+}
+.customers-link:is(:hover, :focus) {
+  border: 1px solid var(--hover-focus-color);
+}
+
 /* -----------------------------  Footer  ----------------------------------- */
 
 .footer {
@@ -402,4 +453,44 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cornflower-color);
+}
+.footer-socials {
+}
+.footer-socials-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-background-color);
+}
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #434455;
+  border-radius: 50%;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
+}
+.footer-flex {
+  display: flex;
+  gap: 120px;
 }
