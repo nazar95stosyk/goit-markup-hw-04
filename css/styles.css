@@ -199,13 +199,25 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  margin-bottom: 8px;
+  margin: 8px 0;
 }
 .features-item-description {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--address-items-description-color);
+}
+.features-icon {
+  width: 64px;
+  height: 64px;
+}
+.features-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cloud-color);
+  width: 264px;
+  height: 112px;
 }
 
 /* -----------------------------  What are we doing?  ----------------------------------- */
@@ -339,8 +351,7 @@ img {
   cursor: pointer;
   padding: 12px 24px;
 }
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-btn:is(:hover, :focus) {
   color: var(--main-background-color);
   background: var(--hover-focus-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -356,6 +367,11 @@ img {
 
 .portfolio-gallery-item {
   width: 360px;
+}
+.portfolio-gallery-item:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .porfolio-gallery-item-content {
@@ -395,7 +411,7 @@ img {
 }
 .customers-list {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 .customers-link {
