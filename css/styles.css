@@ -47,6 +47,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -144,6 +146,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1440px;
+  margin: 0 auto;
+  background-size: cover;
 }
 .hero-title {
   width: 496px;
@@ -368,8 +372,10 @@ img {
 .portfolio-gallery-item {
   width: 360px;
 }
-.portfolio-gallery-item:hover {
-  cursor: pointer;
+.porfolio-gallery-item-link {
+  display: block;
+}
+.portfolio-gallery-item-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -408,6 +414,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-text-color);
+  margin-bottom: 72px;
 }
 .customers-list {
   display: flex;
@@ -424,7 +431,6 @@ img {
   border-radius: 4px;
 }
 .customers-item {
-  margin-top: 72px;
   height: 88px;
   width: 168px;
 }
@@ -470,6 +476,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--cornflower-color);
 }
+.footer-logo-description {
+  margin-right: 120px;
+}
 .footer-socials {
 }
 .footer-socials-title {
@@ -508,5 +517,4 @@ img {
 }
 .footer-flex {
   display: flex;
-  gap: 120px;
 }
